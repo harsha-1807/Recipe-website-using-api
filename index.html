@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Must eats | Recipe website</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <!-- header 1  -->
+    <div id="header1">
+        <img src="./Group 2.png" alt="" id="logo" />
+    </div>
+    
+    <!-- header 2  -->
+    <div id="header2">
+        <div id="part1">
+            <a href="./index.html#header2" onmouseover="backgroundchange(this)" onmouseleave="mouseleave(this)" class="nope">
+                Home
+            </a>
+            <a href="./index.html#box1" onmouseover="backgroundchange(this)" onmouseleave="mouseleave(this)" class="nope">
+                Discover</a>
+            <a href="./index.html#footerpart" onmouseover="backgroundchange(this)" onmouseleave="mouseleave(this)" class="nope">
+                Contact
+            </a>
+            <!-- <a href="https://harsha-1807.github.io/portfolio/" onmouseover="backgroundchange(this)"
+                onmouseleave="mouseleave(this)">
+                Owned by</a> -->
+        </div>
+        <div id="part2">
+            <div id="searchbox">
+                <img src="./check-circle.svg" alt="" />
+                <input type="text" placeholder="SEARCH" id="search" />
+                <a href="./index.html#box2"><img src="./arrow-right.svg" alt="" id="button" onclick="link()"
+                        onmouseover="backgroundchange(this)" onmouseleave="mouseleave(this)" /></a>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <!-- random dish  -->
+    <div id="box1">
+        <h1>random dishes you may like</h1>
+
+        <div id="bg1">
+            <img src="" id="randomdish" onclick="openbox()" />
+            <h2 id="randomname" onclick="openbox()"></h2>
+        </div>
+    </div>
+
+
+    <!-- popup for ingredients  -->
+    <div id="popup">
+        <h2> INGREDIENTS </h2> <h2 id="cross" onclick="closebox()">x</h2>
+        <div id="container">
+
+            <div id="image">
+                <img src="" alt="" id="mealimg">
+            </div>
+            <div>
+                <div id="ingredients">
+
+                </div>
+                <div id="linkdiv"><a href="" id="link1">Watch video</a></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- searched dishes  -->
+    <div id="box2" hidden>
+        <h1>recipes you searched for</h1>
+        <img src="" alt="" />
+        <div id="bg2">
+            <h1 id="message">Search some category for recipes</h1>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <div id="footerpart">
+        <h1>I hope we provided you with tasty recipes</h1>
+        <div id="bg3">
+            <div id="bg3part">
+                <div id="bg3-1">
+                    <img src="./Group 4.png" alt="" id="logo2" />
+                    <h2>Thanks for visiting !</h2>
+                </div>
+                <div id="bg3-2">
+                    <h2>social</h2>
+                    <span>
+                        <img src="./github-ico.png" alt="" />
+                        <img src="./insta-ico.png" alt="" height="30px" />
+                    </span>
+                </div>
+            </div>
+            <div>
+                <img src="./Line 1.png" alt="" height="1px" width="1400px" />
+                <a href="https://harsha-1807.github.io/portfolio/">
+                    <p>© Copyright 2023. Made by Harshavardhan</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/4438a6ff9d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

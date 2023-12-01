@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Mono+One&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    /* background-image   */
+    background-image: url(./bg.png);   
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* section 1 of webpage  */
+/* header 1  */
+
+#header1{
+    height: 60px;
+    background-color: #DBDFD0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* logo style  */
+#logo{
+    width: 250px;
+    height: 50px;
+}
+
+/* header 2  */
+#header2{
+    height: 60px;
+    
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.32) 0%, rgba(217, 217, 217, 0.32) 100%);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#part1,#part2{
+    padding-left: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 22vw;
+    
+}
+
+#part1 a{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+
+}
+
+#part2{
+    padding-left: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 300px;
+
+}
+#part2 a{
+    padding-top:1px;
+}
+#searchbox{
+    border: 3px solid black;
+    width: 200px;
+    display: flex;
+    padding: 5px;
+    border-radius: 118px;
+
+}
+
+
+#search{
+    background-color:transparent;
+    border: transparent;
+    text-align: center;
+    color:black;
+    outline: 0px;
+    text-transform: uppercase;
+}
+
+::placeholder{
+    color: black;
+}
+
+
+/* section 2 of webpage  */
+/* random meal  */
+#box1{
+    margin-top: 710px;
+    text-align: center;
+}
+
+
+h1{
+    color: #5B7022;
+    font-family: 'Rubik Mono One', monospace;
+    /* font-family: Rubik One; */
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    
+}
+
+#bg1{
+    height: 450px;
+    flex-shrink: 0;
+    background: #BF8300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#bg1 img{
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 27px;
+}
+
+
+/* search section  */
+#box2{
+    text-align: center;
+}
+
+#bg2{
+    background: rgba(101, 139, 53, 0.88);
+    backdrop-filter: blur(37px);
+    height: 450px;
+
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    
+
+}
+
+
+#bg2::-webkit-scrollbar {
+    display: none;
+  }
+
+  
+.meal{
+    margin: 15px;
+}
+
+#button{
+    cursor: pointer;
+}
+/* section 3 of webpage  */
+/* searched meals  */
+
+#bg2 img{
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 27px;
+
+}
+#message{
+    text-align: center;
+    width: 2000px;
+}
+
+/* footer part  */
+#footerpart{
+    text-align: center;
+}
+#logo2{
+    height: 60px;
+    /* margin-top: 60px; */
+}
+#bg3{
+    /* background: #3C4442; */
+    background: black;
+    backdrop-filter: blur(37px);
+    height: 265px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+#bg3part{
+    height: 200px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+#bg3-1{
+    width: 340px;
+}
+#bg3-2{
+    margin-right: 60px;
+  
+    
+}
+#bg3-2 h2{
+    /* font-size: large; */
+    text-transform: uppercase;
+}
+
+
+/* popup  */
+#popup{
+    position: fixed;
+    display: none;
+    height: 70vh;
+    width: 50vw;
+    /* border: 1px solid red; */
+    left: 400px;
+    top: 5vh;
+    text-align: center;
+    z-index: 2;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32) 0%, rgba(7, 7, 7, 0.32) 100%);
+    backdrop-filter: blur(3px);
+    color: black;
+    box-shadow: 0px 6px 5px 0px rgba(56, 55, 55, 0.25), 6px 6px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    /* overflow-y: scroll; */
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#mealimg{
+    height: 200px;
+    border-radius: 20px;
+}
+#image{
+    margin: 20px;
+}
+#container{
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+}
+ #ingredients{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: white;
+    
+ }
+ #linkdiv{
+    background: rgb(174, 26, 26);
+    height: 20px;
+    width: 120px;
+    border-radius: 7px;
+
+ }
+
+ #list{
+    background: #5B7022;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+
+
+ }
+#cross{
+    margin-top: -60px;
+    margin-left: 700px;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 600px) {
+ 
+    body{
+        background-image: url(./bgmobile.avif);
+        background-color: white;
+        background-size: 100%;
+        overflow-x: hidden;
+    }
+
+    #logo2{
+        width: 160px;
+    }
+    #bg3-1 h2{
+        font-size: large;
+    }
+    h1{
+        font-size: large;
+        width: 300px;
+        margin-left: 50px;
+    }
+    .nope{
+        display: none;
+    }
+    #searchbox{
+        width: 200px;
+        margin-left: -100px;
+    }
+
+
+}
